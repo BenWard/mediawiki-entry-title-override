@@ -1,0 +1,32 @@
+MediaWiki Extension — Override Entry Title
+
+OverrideEntryTitle is a crude and rather hacky MediaWiki extension to allow
+you to override a MediaWiki page name with someone more human legible, for
+instance, the page `/wiki/hatom` may be overridden to ‘hAtom 0.3’.
+
+Usage:
+-----
+
+This extension adds an `<entry-title>` element to the MediaWiki syntax (named
+for its correspondence to marking up entries in hAtom). The content of that
+element overrides the default title of the page at render time, and removes
+that content from the document body.
+
+Known Issues:
+------------
+
+1. This extension disables caching of rendered page content.
+
+To Do:
+-----
+
+1. Add a more wiki-esque shorthand syntax (perhaps `!! Page Title !!`)
+2. Support caching of the override title and apply the override on every page 
+load, not just when the content is parsed.
+
+
+
+Originally written for microformats.org/wiki, by Ben Ward
+
+  * http://microformats.org/wiki/
+  * http://ben-ward.co.uk
